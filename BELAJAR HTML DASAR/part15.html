@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+   <title>Pemandangan Alam Terindah</title>
+</head>
+<body>
+
+<!-- Header dan Paragraf -->
+<h1>Keindahan Pemandangan Alam Nusantara</h1>
+<p>Ini adalah <strong>halaman pengenalan</strong> tentang beberapa <em>pemandangan alam terbaik</em> yang bisa ditemukan di Indonesia.</p>
+
+<!-- Tag link -->
+<p>Anda bisa mengetahui lebih lanjut tentang destinasi wisata di 
+<a href="https://www.indonesia.travel"  target="_blank">Visit Indonesia</a>, 
+dan akan terbuka pada tab baru</p>
+
+<!-- Tag image -->
+<img src="pemandangan.jpg" alt="Gunung dan Danau di Bali" width="400"/>
+
+<!-- Tag list -->
+<h2>Daftar Pemandangan Alam Terpopuler</h2>
+<ol>
+   <li>Tegallalang - Bali (Sawah Berundak)</li>
+   <li>Raja Ampat - Papua (Keindahan Bawah Laut Dunia)</li>
+   <li>Lake Toba - Sumatera Utara (Danau Vulkanik Terbesar)</li>
+   <li>Kawah Ijen - Jawa Timur (Api Biru di Gunung)</li>
+   <li>Nusa Penida - Bali (Tebing Tinggi dan Pantai Eksotis)</li>
+</ol>
+
+<!-- Tag table -->
+<h2>Tabel Informasi Wisata Alam</h2>
+<table border="1">
+  <tr>
+    <th>Nama Tempat</th>
+    <th>Lokasi</th>
+    <th>Fasilitas</th>
+  </tr>
+  <tr>
+    <td>Sawah Tegallalang</td>
+    <td>Bali</td>
+    <td>Penginapan, Restoran, Spot Foto</td>
+  </tr>
+  <tr>
+    <td>Pulau Raja Ampat</td>
+    <td>Papua Barat</td>
+    <td>Resort, Perahu Sewaan, Tour Guide</td>
+  </tr>
+  <tr>
+    <td>Kawah Ijen</td>
+    <td>Jawa Timur</td>
+    <td>Pemandu, Penginapan Sederhana</td>
+  </tr>
+</table>
+<br />
+
+<!-- Tag form -->
+<form action="simpan.php" method="post">
+
+   Nama: <input type="text" name="nama" value="Nama Kamu" />
+   <br /><br />
+
+   Email: <input type="email" name="email" placeholder="Masukkan email aktif" />
+   <br /><br />
+
+   Jenis Kelamin:
+   <input type="radio" name="jenis_kelamin" value="laki-laki" checked /> Laki-Laki
+   <input type="radio" name="jenis_kelamin" value="perempuan" /> Perempuan
+   <br /><br />
+
+   Destinasi Favorit:
+   <input type="checkbox" name="destinasi[]" value="tegallalang" checked /> Tegallalang
+   <input type="checkbox" name="destinasi[]" value="raja_ampat" /> Raja Ampat
+   <input type="checkbox" name="destinasi[]" value="kawah_ijen" /> Kawah Ijen
+   <br /><br />
+
+   Kota Asal:
+   <select name="asal_kota">
+      <option value="Jakarta">Jakarta</option>
+      <option value="Bandung">Bandung</option>
+      <option value="Yogyakarta" selected>Yogyakarta</option>
+   </select>
+   <br /><br />
+
+   Komentar Anda:
+   <br />
+   <textarea name="komentar" rows="5" cols="40">Silakan bagikan pengalaman atau rencana liburanmu...</textarea>
+   <br /><br />
+
+   <input type="submit" value="Kirim Data!" />
+
+</form>
+
+</body>
+</html>
